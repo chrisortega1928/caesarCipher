@@ -33,7 +33,8 @@ function caesarCipher(input) {
         //and in this case the given index is zero
         code = get.charCodeAt(0);
 
-        //if the value is less than 65 and 90, the condition is true
+        //if the value in code is greater than or equal to 65 
+        //and less than or equal to 90, the condition is true
         if (code >= 65 && code <= 90) {
             //ceasar cipher gets applied
             get = String.fromCharCode((65 + ((code - 65) + k) % 26));
